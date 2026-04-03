@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="FORGE.Agents/FORGE.Agents.csproj" />
+  <Project Path="FORGE.Compilation/FORGE.Compilation.csproj" />
+  <Project Path="FORGE.Core/FORGE.Core.csproj" />
+  <Project Path="FORGE.Tests/FORGE.Tests.csproj" />
+  <Project Path="FORGE.Validation/FORGE.Validation.csproj" />
+</Solution>
