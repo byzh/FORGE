@@ -63,19 +63,19 @@ public sealed class ClaudeCodeGenerator : ICodeGenerator
     }
 
     private static string BuildSystemPrompt(string userPrompt) =>
-        $"""
+        $$"""
         You are a C# code generator for a financial trading strategy system.
         Generate a single C# class that implements the IStrategy interface from the FORGE.Core namespace.
         Return ONLY the raw C# source code, no markdown, no explanation.
 
         IStrategy contract:
-        - string Name {{ get; }}
-        - string Underlying {{ get; }}
+        - string Name { get; }
+        - string Underlying { get; }
         - Task<AgentSignal> GenerateSignalAsync(MarketContext context, CancellationToken ct)
         - bool Validate(out IReadOnlyList<string> violations)
 
         Strategy description:
-        {userPrompt}
+        {{userPrompt}}
         """;
 
     private static string ExtractCode(string responseJson)
