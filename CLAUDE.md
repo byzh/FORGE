@@ -6,7 +6,7 @@ via Roslyn runtime compilation and multi-role LLM agent orchestration.
 Registered R&D project (CIR/JEI), fiscal year 2025-2026.
 
 ## Tech Stack
-- Language      : C# 12 / .NET 8
+- Language      : C# 13 / .NET 10
 - Dynamic build : Microsoft.CodeAnalysis (Roslyn)
 - LLM           : Anthropic Claude API (claude-sonnet-4-5)
 - Market data   : Tastytrade API (REST + WebSocket)
